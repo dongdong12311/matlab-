@@ -20,7 +20,8 @@ cd=fitdist(data_t,'t');
 [h,p]=chi2gof(data_t,'CDF',cd);
 % 两个相同分布的t分布
 data_t2=random('t',5,1000,1);
-[h,p]=kstest2(data_t1,data_t2);
+data_t1=random('t',5,1000,1);
+[h,p]=kstest2(data_t1,data_t2)
 
 %% logistic分布的随机数
 mu=2;
